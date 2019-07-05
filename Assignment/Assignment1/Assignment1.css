@@ -1,0 +1,66 @@
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(26,13,171);
+    font-size: 18px !important;
+    font-style: normal;
+    line-height: 24px;
+}
+
+cite {
+    font-style: normal;
+    color: #006621
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #545454;
+}
+
+.container {
+    width: 1280px;
+    height: 3000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.results {
+    margin-left: 150px;
+    border: 1px solid yellow;
+}
+
+.pagenumbers {
+    border: 1 px solid magenta;
+}
+
+.bottom-info {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+}
+
+.mediacontainer {
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mediablock {
+    width: 205px;
+    border: 1px solid red;
+}

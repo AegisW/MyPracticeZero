@@ -15,12 +15,31 @@ body {
 
 /* Style the top search bar */
 .searchbar {
-    padding: 16px 0 0 150px;
+    padding: 4px 0 0 150px;
 }
 
-/* Highlight searchbar on hover */
-.searchbar:hover {
+input[type=text] {
+    width: 638px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    padding-left: 20px;
+}
 
+/* Highlight input bar on hover */
+input[type=text]:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Style search button */
+.searchbutton {
+    position: absolute;
+    top: 28px;
+    margin-left: 600px;
+    color: #4285f4;
+    background-color: transparent;
+    border: 0px;
 }
 
 /* Style the logo */
@@ -32,17 +51,29 @@ body {
 
 /* Style the navigation bar */
 .navbar {
+    margin-left: 160px;
     display: flex;
 }
 
 /* Style the navigation bar links */
 .navbar a {
     color: rgb(95,99,104);
+    padding: 16px 12px 12px 0;
+    text-decoration: none;
+    text-align: center;
 }
 
 /* Change color on hover */
 .navbar a:hover {
     color:rgb(26,115,232);
+}
+
+/* Style for search status */
+.searchstatus {
+    margin-left: 160px; 
+    font-size: small; 
+    width: 100%;
+    color: rgb(95,99,104);
 }
 
 /* Column container */
@@ -54,21 +85,67 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Main column */
 .main {
-    flex: 70%;
-    padding: 20px;
+    flex: 40%;
+    padding: 20px 10px 20px 160px;
+}
+
+.main div {
+    margin-bottom: 30px;
+}
+
+.main a {
+    color: rgb(26,13,171);
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
+.main cite {
+    font-size: 14px;
+    font-style: normal;
+    color: #006621
+}
+
+.main p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: small;
+    color: #545454;
 }
 
 /* Sidebar/right column */
 .side {
-    flex: 30%;
-    padding: 20px;
+    flex: 20%;
+    padding-top: 20px;
 }
 
 /* Footer */
 .footer {
-    padding: 20px;
+    padding: 12px 10px 12px 160px;
     background: #f2f2f2;
     border-top: 1px solid #e4e4e4;
+    font-size: small;
+    color: #5f6368;
+}
+
+.footer a {
+    margin-right: 24px;
+    color: #5f6368;
+    font-size: small;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.footer a:hover {
+    color: rgb(51, 51, 51);
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */

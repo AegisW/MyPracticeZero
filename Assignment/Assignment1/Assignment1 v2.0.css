@@ -51,14 +51,16 @@ input[type=text]:hover {
 
 /* Style the navigation bar */
 .navbar {
-    margin-left: 160px;
+    padding-left: 160px;
     display: flex;
+    border-bottom: 1px solid #ebebeb;
 }
 
 /* Style the navigation bar links */
 .navbar a {
     color: rgb(95,99,104);
-    padding: 16px 12px 12px 0;
+    font-size: 13px;
+    padding: 20px;
     text-decoration: none;
     text-align: center;
 }

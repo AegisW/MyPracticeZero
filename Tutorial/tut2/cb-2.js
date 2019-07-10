@@ -142,7 +142,7 @@ $("hand").click(
             $("#" + id)... // scroll to the center of screen
             // todo: click -> $("#btn-" + id).click()
             $("#" + id).fadeOut();
-            sleep(1000); // search
+            await sleep(1000); // search
         });
 
         $(XXX).fadeOut();
